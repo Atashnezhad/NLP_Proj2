@@ -13,7 +13,7 @@ from nltk.corpus import stopwords # Import the stopword list
 
 from nltk.stem.porter import PorterStemmer
 from nltk.stem import WordNetLemmatizer
-
+import nltk
 import pickle
 
 
@@ -35,7 +35,15 @@ def Apply(df_reddit):
         #Replacing multiple spaces
         item = " ".join(item.split())
         #Removing stopwords
-        stops = stopwords.words("english")
+        
+        stops = nltk.corpus.stopwords.words('english')
+        newStopWords = ['http', 'https', 'would', 'com', 'www', 'youtube', 'org']
+        stops.extend(newStopWords)
+        
+#         stops = stopwords.words("english")
+        
+        
+        
         words = [w for w in item.split() if w not in stops]#stops
         # Instantiate object of class PorterStemmer and stemming.
         p_stemmer = PorterStemmer()
