@@ -53,7 +53,7 @@ the data was save in two formats .csv and .pkl.
 * Cleaning data: 
 the data included 10-15 columns with one column with reddit comments as text. The NaN values were filtered and the text was cleaned using a serious of functions including tokenization, splitting, snitching, removing stop words, stemming, etc.
 
-
+* Exploratory Data Analysis: 
 
 
 
