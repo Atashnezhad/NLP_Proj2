@@ -41,18 +41,10 @@ The project directory tree structure is provided below.
 
 ### Installation:
 
-* To run this project you need to have python installed on yourt local machine. At the moment the project is not come with the env but I will make an env using conda and will add to the directory. You may check the direcory and check for update. 
-* I may provide a docker image for this project too. So stay tune!
+* To run this project you need to have python installed on yourt local machine. At the moment the project is not come with the env but I will make an env using conda and will add to the directory. check for updates.  Also I may provide a docker image for this project too. So stay tune!
 I also prepare a medium about how you can use docker image and jupyter notebook [here](https://medium.com/@atashnezhad1/in-this-tutorial-we-will-learn-the-very-basics-of-running-the-jupyter-notebook-using-docker-9b347c9058d9).
-* List of my global libraries is provided as ```requirements.txt``` file in the env folder, so you can use ```pip install -r requirements.txt ``` to install all necessary libraries with no hassle.
-
-
-
-
-### Usage: 
-
-### Credits:
-
+* List of my global libraries is provided as ```requirements.txt``` file in the env folder, therefore you may use ```pip install -r requirements.txt ``` to install all necessary libraries with no hassle.
+* 
 ### License:
 
 
