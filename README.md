@@ -20,7 +20,7 @@ The goal is to develope a binary class classification which would be able to rec
 These two close categories were selected to rise the challange and see how much close we can get using common ML algorithm libraries in python.
 
 ### Table of Contents:
-The project tree structure is provided below.
+The project directory tree structure is provided below.
 ```
 ├── Assets
 ├── Codes
@@ -40,6 +40,11 @@ The project tree structure is provided below.
 ```
 
 ### Installation:
+To run this project you need to have python installed on yourt local machine. At the moment the project is not come with the env but I will make an env using conda and will add to the directory. You may check the direcory and check for update. I may provide a docker image for this project too. So stay tune!
+I also prepare a medium about how you can use docker image and jupyter notebook [here](https://medium.com/@atashnezhad1/in-this-tutorial-we-will-learn-the-very-basics-of-running-the-jupyter-notebook-using-docker-9b347c9058d9).
+
+
+
 
 ### Usage: 
 
