@@ -80,7 +80,7 @@ NASA has a lower average word count compare to Space with a smaller standard dev
 </p>
 
 - Inspect which words other than stopwords occur frequently.
-<p align="">
+<p>
   <img src="Figures/plot_03_11.png" >
 </p>
 
@@ -103,21 +103,21 @@ Again it was observed that both categories are match in term of complexity.
   <img src="Figures/plot_03_25.png" >
 </p>
 
-- 
+- Following columns were selected and save seperatly as EDA df.
+  - cols = 'ent', 'word_count*', 'sentiment_score*', 'polarity_score', 'polarity','polarity_VSA', 'text_complexity'
+
+- EDA df corrolation is see at the following figure. Again it is observed that there is clear coorrolation between ent parameter and target.
+<p align="">
+  <img src="Figures/plot_03_26.png" >
+</p>
+
+- Three set of data frames were prepared including count-vectorized texts, EDA data frame and, merged count-vectorized text and EDA data.
 
 
+**Modeling-ML algorithms:** 
 
-
-
-
-
-
-
-
-
-
-
-
+- Several ML algorithms applied to three set of data frame.
+- It was observed that using only vectorized text results in lower accuracy compare to the EDA data set. Also using merged data set results in top accuracy. check out the following confusion matrixes.
 
 
 
@@ -127,7 +127,9 @@ Again it was observed that both categories are match in term of complexity.
   <img src="Figures/plot_04_03_4.png" >
 </p>
 
-
+<p align="center">
+  <img src="Figures/plot_03_27.png" >
+</p>
 
 <p align="">
   <img src="Figures/plot_03_11.png" >
@@ -144,16 +146,6 @@ Again it was observed that both categories are match in term of complexity.
 <p align="center">
   <img src="Figures/plot_04_12.png" >
 </p>
-
-
-
-
-
-
-<p align="center">
-  <img src="Figures/plot_03_27.png" >
-</p>
-
 
 
 
