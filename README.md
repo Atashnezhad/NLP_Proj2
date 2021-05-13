@@ -125,22 +125,3 @@ Again it was observed that both categories are match in term of complexity.
   <img src="Figures/plot_04_03_4.png" >
 </p>
 
-<p align="center">
-  <img src="Figures/plot_03_27.png" >
-</p>
-
-<p align="">
-  <img src="Figures/plot_03_11.png" >
-</p>
-
-
-
-<p align="center">
-  <img src="Figures/plot_03_14.png" >
-</p>
-
-
-
-<p align="center">
-  <img src="Figures/plot_04_12.png" >
-</p>
