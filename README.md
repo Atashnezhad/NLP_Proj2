@@ -119,7 +119,7 @@ Again it was observed that both categories are match in term of complexity.
 - the models were grid searched using paralell computing to achive the highest speed.
 - The voting system included three best models along with hyper-parameters were applied which results in maximum accuracy of 96%.
 - It was observed that using only vectorized text results in lower accuracy compare to the EDA data set. Also using merged data set results in top accuracy. 
-- check out the following confusion matrixes. The left one is using Logistic Regression on vectorized data while at the right the Soft voting model used.
+- check out the following confusion matrixes. The left one is using Logistic Regression on vectorized data while at the right the Soft voting model used on All_df.
 <p align="">
   <img src="Figures/plot_04_1.png" >
   <img src="Figures/plot_04_03_2.png" >
