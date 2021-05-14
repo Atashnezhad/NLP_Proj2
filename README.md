@@ -39,7 +39,7 @@ The project directory tree structure is provided below.
 
 ### Installation:
 
-* To run this project you need to have python installed on your local machine. At the moment the project is not come with the env but I will make an env using conda and will add to the directory. check for updates.  Also, I may provide a docker image for this project too. So stay tuned!
+* To run this project you need to have python installed on your local machine. At the moment the project does not come with the env but I will make an env using conda and will add it to the directory. check for updates.  Also, I may provide a docker image for this project too. So stay tuned!
 I also prepare a medium about how you can use docker image and Jupyter notebook [here](https://medium.com/@atashnezhad1/in-this-tutorial-we-will-learn-the-very-basics-of-running-the-jupyter-notebook-using-docker-9b347c9058d9).
 * List of my global libraries is provided as ```requirements.txt``` file in the env folder, therefore you may use ```pip install -r requirements.txt ``` to install all necessary libraries with no hassle.
 * 
@@ -47,29 +47,29 @@ I also prepare a medium about how you can use docker image and Jupyter notebook 
 
 **Gathering data:** 
 
-Data was received using the API from the Reddit website for two categories. I used my friend [Saied](https://github.com/saiedmighani/Global_warming_NLP_analysis/blob/master/assets/get_reddit_posts.py) function with a little bit of change to recieve data from Reddit. You may check out the original function [here](https://github.com/scaress21/reddit_and_quibi/blob/master/code/01A_Gathering_Reddit_Data.ipynb).
+Data was received using the API from the Reddit website for two categories. I used my friend [Saied](https://github.com/saiedmighani/Global_warming_NLP_analysis/blob/master/assets/get_reddit_posts.py) function with a little bit of change to receive data from Reddit. You may check out the original function [here](https://github.com/scaress21/reddit_and_quibi/blob/master/code/01A_Gathering_Reddit_Data.ipynb).
 the data was save in two formats .csv and .pkl.
 
 **Cleaning data:** 
 
-the data included 10-15 columns with one column with reddit comments as text. The NaN values were filtered and the text was cleaned using a serious of functions including tokenization, splitting, snitching, removing stop words, stemming, etc.
+the data included 10-15 columns with one column with Reddit comments as text. The NaN values were filtered and the text was cleaned using a series of functions including tokenization, splitting, snitching, removing stop words, stemming, etc.
 
 **Exploratory Data Analysis:** 
 
-The main data frame was analized and following were observed.
+The main data frame was analyzed and the following were observed.
 
-- It is seen that both categorise are pretty close. The Space has higher percentage of 'link', 'rich:video', and 'self' while Nasa has more 'image' number.
-- Again It is seen that both categorise are pretty close in term of 'over_18'. higher number of people in space answered 'False' to the column 'over_18'.
-NASA has a lower average word count compare to Space with a smaller standard deviation. let's look at the plt.hist and compare it with space. similar plot provided above but here bar plots are side by side.
+- It is seen that both categories are pretty close. Space has a higher percentage of 'link', 'rich:video', and 'self' while Nasa has more 'image' numbers.
+- Again It is seen that both categories are pretty close in terms of 'over_18'. a higher number of people in space answered 'False' to the column 'over_18'.
+NASA has a lower average word count compare to Space with a smaller standard deviation. let's look at the plt.hist and compare it with space. A similar plot provided above but here bar plots are side by side.
 - It is clear that both subcategories are pretty close in terms of word count. However, the space category has some long texts above 500.
 - For the sentiment score, it is seen that both mean and std are pretty close. It seems both SPACE and NASA forums are pretty close! Let's plot both NASA and space.
-- It is seen that the negative sentiment scores for space are a little bit higher than NASA. People who are in NASA discussion have a more positive attitude compared to people who are in space discussion. Let's double check it and do the summation of sentiments for both space and NASA. Also, the Space has more words compare to NASA.
+- It is seen that the negative sentiment scores for space are a little bit higher than NASA. People who are in NASA discussion have a more positive attitude compared to people who are in space discussion. Let's double-check it and do the summation of sentiments for both space and NASA. Also, the Space has more words compare to NASA.
 - Let's focus on text and do count vectorize on data. Three steps are taken as follows:
   - Add some stop words to the general list
   - Apply the new list of stop words list (extend)
   - Apply count vectorize to the data
 
-- Lets see the top words in NASA, SPACE and then see the top overlap words.
+- Let's see the top words in NASA, SPACE, and then see the top overlap words.
   - As it is seen these two topics are very close! The top words for NASA are space, earth, NASA, moon which have three out of four similar to space.
 - Number of characters present in each sentence
 - Average word length in each sentence. Again both topics are pretty close in term of average word length and number fo characters.
@@ -83,10 +83,10 @@ NASA has a lower average word count compare to Space with a smaller standard dev
 </p>
 
 - Topic Modeling exploration with pyLDAvis.
-  - The unsupervised correctly detect two main subjects as we expected (high coffs for NASA and Space). NASA and Space!
-- Textblob librarie. sentiment polarity was applied.
+  - The unsupervised correctly detect two main subjects as we expected (high Coffs for NASA and Space). NASA and Space!
+- Textblob libraries. sentiment polarity was applied.
 - Vader Sentiment Analysis was applied too. Vader works better in detecting negative sentiment.
-- Named Entity Recognition (ner). Named entity recognition is an information extraction method in which entities that are present in the text are classified into predefined entity types like “Person”,” Place”,” Organization”, etc. By using NER we can get great insights about the types of entities present in the given text dataset. A powerful corrolation between enr and target values was observed.
+- Named Entity Recognition (ner). Named entity recognition is an information extraction method in which entities that are present in the text are classified into predefined entity types like “Person”,” Place”,” Organization”, etc. By using NER we can get great insights into the types of entities present in the given text dataset. A powerful correlation between enr and target values was observed.
 <p align="">
   <img src="Figures/plot_03_19.png" >
 </p>
@@ -114,11 +114,11 @@ Again it was observed that both categories are match in term of complexity.
 
 **Modeling-ML algorithms:** 
 
-- Several ML algorithms applied to three set of data frame. 
+- Several ML algorithms applied to three sets of the data frames. 
 - Logistic Regression, Gradient Boosting Classifier and, MLP Classifier were applied.
-- the models were grid searched using paralell computing to achive the highest speed.
+- the models were grid searched using parallel computing to achieve the highest speed.
 - The voting system included three best models along with hyper-parameters were applied which results in maximum accuracy of 96%.
-- It was observed that using only vectorized text results in lower accuracy compare to the EDA data set. Also using merged data set results in top accuracy. 
+- It was observed that using only vectorized text results in lower accuracy compared to the EDA data set. Also using merged data set results in top accuracy. 
 - check out the following confusion matrixes. The left one is using Logistic Regression on vectorized data while at the right the Soft voting model used on All_df.
 <p align="">
   <img src="Figures/plot_04_1.png" >
@@ -132,3 +132,6 @@ Again it was observed that both categories are match in term of complexity.
 </p>
 
   
+
+
+
