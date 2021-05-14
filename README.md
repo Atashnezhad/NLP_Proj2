@@ -130,7 +130,7 @@ Again it was observed that both categories are match in term of complexity.
 </p>
 
 
-- Progress in modeling accuracy alos is seen in the following figure.
+- Progress in modeling accuracy is seen in the following figure.
 <p align="">
   <img src="Figures/plot_04_03_4.png" >
 </p>
