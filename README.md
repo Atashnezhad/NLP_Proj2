@@ -72,9 +72,13 @@ NASA has a lower average word count compare to Space with a smaller standard dev
 - Let's see the top words in NASA, SPACE, and then see the top overlap words.
   - As it is seen these two topics are very close! The top words for NASA are space, earth, NASA, moon which have three out of four similar to space.
 - Number of characters present in each sentence
-- Average word length in each sentence. Again both topics are pretty close in term of average word length and number fo characters.
-<p align="">
-  <img src="Figures/plot_03_10.png" >
+- Average word length in each sentence. Again both topics are pretty close in term of average word length, sentiment score and, number fo characters.
+<p align="center">
+  <img src="Figures/plot_03_6.png" >
+</p>
+
+<p align="center">
+  <img src="Figures/plot_03_7.png" >
 </p>
 
 - Inspect which words other than stopwords occur frequently.
