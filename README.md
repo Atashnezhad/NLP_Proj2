@@ -43,6 +43,16 @@ The project directory tree structure is provided below.
 I also prepare a medium about how you can use docker image and Jupyter notebook [here](https://medium.com/@atashnezhad1/in-this-tutorial-we-will-learn-the-very-basics-of-running-the-jupyter-notebook-using-docker-9b347c9058d9).
 * List of my global libraries is provided as ```requirements.txt``` file in the env folder, therefore you may use ```pip install -r requirements.txt ``` to install all necessary libraries with no hassle.
 
+* Also use following to find the executable whenver you had hard time to install libraries.
+```python
+import sys
+print(sys.executable)
+```
+Then use following to install favorite libraries (i.e. wordcloud).
+```python
+!/Users/amin/anaconda3/bin/python -m pip install wordcloud
+```
+I used it several times in Part_03 of this project and it works like charm!
 ### Instruction:
 
 **Gathering data:** 
