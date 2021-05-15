@@ -42,7 +42,7 @@ The project directory tree structure is provided below.
 * To run this project you need to have python installed on your local machine. At the moment the project does not come with the env but I will make an env using conda and will add it to the directory. check for updates.  Also, I may provide a docker image for this project too. So stay tuned!
 I also prepare a medium about how you can use docker image and Jupyter notebook [here](https://medium.com/@atashnezhad1/in-this-tutorial-we-will-learn-the-very-basics-of-running-the-jupyter-notebook-using-docker-9b347c9058d9).
 * List of my global libraries is provided as ```requirements.txt``` file in the env folder, therefore you may use ```pip install -r requirements.txt ``` to install all necessary libraries with no hassle.
-* 
+
 ### Instruction:
 
 **Gathering data:** 
@@ -51,8 +51,7 @@ Data was received using the API from the Reddit website for two categories. I us
 the data was save in two formats .csv and .pkl.
 
 **Cleaning data:** 
-
-the data included 10-15 columns with one column with Reddit comments as text. The NaN values were filtered and the text was cleaned using a series of functions including tokenization, splitting, snitching, removing stop words, stemming, etc.
+Data included 10-15 columns with one column with Reddit comments as text. The NaN values were filtered and the text was cleaned using a series of functions including tokenization, splitting, snitching, removing stop words, stemming, etc.
 
 **Exploratory Data Analysis:** 
 
@@ -71,7 +70,7 @@ NASA has a lower average word count compare to Space with a smaller standard dev
 
 - Let's see the top words in NASA, SPACE, and then see the top overlap words.
   - As it is seen these two topics are very close! The top words for NASA are space, earth, NASA, moon which have three out of four similar to space.
-- Number of characters present in each sentence
+- Check out the Number of characters present in each sentence.
 - Average word length in each sentence. Again both topics are pretty close in term of average word length, sentiment score and, number fo characters.
 <p align="center">
   <img src="Figures/plot_03_6.png" >
@@ -137,5 +136,17 @@ Again it was observed that both categories are match in term of complexity.
 
   
 
+**Conclusion**
+
+- The best model is the soft voting model including the three best ML algorithms which were achieved through grid search.
+- In this project, a new set of data were extracted which later used for modeling. The analysis shows that a new engineered set of data (EDA) shows higher accuracy and boosts the ML algorithms.
+- Merging both vectorized text and Engineered data set (EDA) even helps more and boosts the accuracy above 80%.
+- Finally having an ensemble model works the best with an accuracy of 96%.
+
+**Suggestions**
+
+- TFIDF vectorizer can be studied and see if it helps the accuracy of models.
+- In voting ML algorithm more model can be introduced which it would help for sure.
+- The goal of this project was to make a challenge and check out how much we can get close to text classification using common python libraries.
 
 
