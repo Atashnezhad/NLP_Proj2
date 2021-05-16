@@ -153,6 +153,35 @@ Again it was observed that both categories are match in term of complexity.
 - Merging both vectorized text and Engineered data set (EDA) even helps more and boosts the accuracy above 80%.
 - Finally having an ensemble model works the best with an accuracy of 96%.
 
+|    | model_name                         | data_set_used     |   accuracys |   TN |   FP |   FN |   TP |
+|----|------------------------------------|-------------------|-------------|------|------|------|------|
+|  0 | LogisticRegression                 | CountVectorizer   |       0.756 | 1186 |  310 |  421 | 1083 |
+|  1 | GradientBoostingClassifier         | CountVectorizer   |       0.736 | 1288 |  208 |  578 |  926 |
+|  2 | MLPClassifier                      | CountVectorizer   |       0.752 | 1149 |  347 |  381 | 1123 |
+|  3 | LogisticRegression                 | EDA_df            |       0.82  | 1456 |   40 |  495 | 1009 |
+|  4 | LogisticRegression                 | EDA_df_normalized |       0.832 | 1496 |    0 |  504 | 1000 |
+|  5 | GradientBoostingClassifier         | EDA_df            |       0.831 | 1495 |    1 |  504 | 1000 |
+|  6 | GradientBoostingClassifier         | EDA_df_normalized |       0.831 | 1495 |    1 |  504 | 1000 |
+|  7 | MLPClassifier                      | EDA_df            |       0.824 | 1470 |   26 |  491 | 1013 |
+|  8 | MLPClassifier                      | EDA_df_normalized |       0.832 | 1488 |    8 |  499 | 1005 |
+|  9 | LogisticRegression                 | All_DF            |       0.828 | 1458 |   38 |  476 | 1028 |
+| 10 | MLPClassifier                      | All_DF            |       0.844 |  nan |  nan |  nan |  nan |
+| 11 | GradientBoostingClassifier         | All_DF            |       0.878 |  nan |  nan |  nan |  nan |
+| 12 | Hard_voting_lr_GB_MLP              | All_DF            |       0.921 | 1481 |   15 |  220 | 1284 |
+| 13 | Soft_voting_lr_GB_MLP              | All_DF            |       0.954 | 1491 |    5 |  101 | 1403 |
+| 14 | Soft_voting_lr_GB_MLP_different_HP | All_DF            |       0.959 | 1493 |    3 |  128 | 1376 |
+
+
+
+
+
+
+
+
+
+
+
+
 **Suggestions**
 
 - TFIDF vectorizer can be studied and see if it helps the accuracy of models.
