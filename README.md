@@ -70,7 +70,7 @@ The main data frame was analyzed and the following were observed.
 - It is seen that both categories are pretty close. Space has a higher percentage of 'link', 'rich:video', and 'self' while Nasa has more 'image' numbers.
 - Again It is seen that both categories are pretty close in terms of 'over_18'. a higher number of people in space answered 'False' to the column 'over_18'.
 NASA has a lower average word count compare to Space with a smaller standard deviation. let's look at the plt.hist and compare it with space. A similar plot provided above but here bar plots are side by side.
-- It is clear that both subcategories are pretty close in terms of word count. However, the space category has some long texts above 500.
+- Both subcategories are pretty close in terms of word count. However, the space category has some long texts above 500.
 - For the sentiment score, it is seen that both mean and std are pretty close. It seems both SPACE and NASA forums are pretty close! Let's plot both NASA and space.
 - It is seen that the negative sentiment scores for space are a little bit higher than NASA. People who are in NASA discussion have a more positive attitude compared to people who are in space discussion. Let's double-check it and do the summation of sentiments for both space and NASA. Also, the Space has more words compare to NASA.
 - Let's focus on text and do count vectorize on data. Three steps are taken as follows:
