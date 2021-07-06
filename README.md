@@ -129,7 +129,7 @@ Again it was observed that both categories are match in term of complexity.
 
 - Several ML algorithms applied to three sets of the data frames. 
 - Logistic Regression, Gradient Boosting Classifier and, MLP Classifier were applied.
-- the models were grid searched using parallel computing to achieve the highest speed.
+- Models were grid searched using parallel computing to achieve the highest speed.
 - The voting system included three best models along with hyper-parameters were applied which results in maximum accuracy of 96%.
 - It was observed that using only vectorized text results in lower accuracy compared to the EDA data set. Also using merged data set results in top accuracy. 
 - check out the following confusion matrixes. The left one is using Logistic Regression on vectorized data while at the right the Soft voting model used on All_df.
