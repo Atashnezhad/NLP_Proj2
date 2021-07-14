@@ -152,7 +152,7 @@ Again it was observed that both categories are match in term of complexity.
 - In this project, a new set of data were extracted which later used for modeling. The analysis shows that a new engineered set of data (EDA) shows higher accuracy and boosts the ML algorithms.
 - Merging both vectorized text and Engineered data set (EDA) even helps more and boosts the accuracy above 80%.
 - Finally having an ensemble model works the best with an accuracy of 96%.
-
+```
 |    | model_name                         | data_set_used     |   accuracys |   TN |   FP |   FN |   TP |
 |----|------------------------------------|-------------------|-------------|------|------|------|------|
 |  0 | LogisticRegression                 | CountVectorizer   |       0.756 | 1186 |  310 |  421 | 1083 |
@@ -170,7 +170,7 @@ Again it was observed that both categories are match in term of complexity.
 | 12 | Hard_voting_lr_GB_MLP              | All_DF            |       0.921 | 1481 |   15 |  220 | 1284 |
 | 13 | Soft_voting_lr_GB_MLP              | All_DF            |       0.954 | 1491 |    5 |  101 | 1403 |
 | 14 | Soft_voting_lr_GB_MLP_different_HP | All_DF            |       0.959 | 1493 |    3 |  128 | 1376 |
-
+```
 <p align="center">
   <img src="Figures/plot_04_03_5.png" >
 </p>
