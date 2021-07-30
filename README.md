@@ -171,11 +171,13 @@ Again it was observed that both categories are match in term of complexity.
 | 13 | Soft_voting_lr_GB_MLP              | All_DF            |       0.954 | 1491 |    5 |  101 | 1403 |
 | 14 | Soft_voting_lr_GB_MLP_different_HP | All_DF            |       0.959 | 1493 |    3 |  128 | 1376 |
 ```
+
+<!-- 
 <p align="center">
   <img src="Figures/plot_04_03_5.png" >
 </p>
 
-
+-->
 
 
 
