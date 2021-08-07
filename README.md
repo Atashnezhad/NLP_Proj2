@@ -176,7 +176,7 @@ Again it was observed that both categories are match in term of complexity.
 Here are the classification models ROC curves developed in Part 04 of this study.
 The voting models are not included here. It is seen the best models are achieved using merged data frames (EDA and vectorized data from text). The ANN and logistic regression have the best performances. Also, it is seen the EDA data frame boosts the model predictions. Comparing the Normalized EDA with EDA, it turns out that using normalized EDA improves the performance of models.
 
-Three models including The xgboost (using normalized EDA data frame) and ANN (tuned hyper-parameters and using EDA/and Normalized EDA) are in the 3d rank.
+Three models including, xgboost (using normalized EDA data frame) and ANN (tuned hyper-parameters and using EDA/and Normalized EDA) are in the 3d rank.
 
 <p align="left">
   <img width="650" src="Figures/plot_05_ROC.png" >
