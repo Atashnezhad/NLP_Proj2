@@ -201,6 +201,5 @@ Three models including The xgboost (using normalized EDA data frame) and ANN (tu
 
 - TFIDF vectorizer can be studied and see if it helps the accuracy of models.
 - In voting ML algorithm more model can be introduced which it would help for sure.
-- The goal of this project was to make a challenge and check out how much we can get close to text classification using common python libraries.
 
 
