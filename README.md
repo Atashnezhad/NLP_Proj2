@@ -173,7 +173,8 @@ Again it was observed that both categories are match in term of complexity.
 ```
 
 
-Here is the four classification models ROC curves. As it is seen the best model is Soft voting model.
+Here are the four classification models ROC curves developed in Part 04 of this study.
+The voting models are not included here. It is seen the best model using merged data frame (EDA and vectorized data from text) the best results is achieved. The ANN and logistic regression have the best performances. Also, it is seen the EDA data frame boosts the prediction ability of the model. Comparing the Normalized EDA with EDA, it is clear that using normalized EDA improves the performance of models.
 
 <p align="left">
   <img width="650" src="Figures/plot_05_ROC.png" >
