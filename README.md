@@ -176,7 +176,7 @@ Again it was observed that both categories are match in term of complexity.
 Here is the four classification models ROC curves. As it is seen the best model is Soft voting model.
 
 <p align="left">
-  <img width="800" src="Figures/plot_05_1.png" >
+  <img width="650" src="Figures/plot_05_ROC.png" >
 </p>
 
 
