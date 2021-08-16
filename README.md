@@ -131,8 +131,15 @@ Again it was observed that both categories are match in term of complexity.
 </p>
 
 - Following columns were selected and save seperatly as EDA df.
-  - cols = 'ent', 'word_count*', 'sentiment_score*', 'polarity_score', 'polarity','polarity_VSA', 'text_complexity'
-
+```
+'ent'
+'word_count*' 
+'sentiment_score*'
+'polarity_score'
+'polarity'
+'polarity_VSA' 
+'text_complexity'
+```
 - EDA df corrolation is see at the following figure. Again it is observed that there is clear coorrolation between ent parameter and target.
 <p align="">
   <img src="Figures/plot_03_26.png" >
