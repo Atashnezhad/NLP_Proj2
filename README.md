@@ -19,12 +19,12 @@ These two close categories were selected to rise the challenge and see how close
 
 Check out below sentences. Can you difference between sentences from NASA and Space community? Actually AI does! with 96% accuracy.
 ```
-A) A star shining through Saturn's rings
-B) Online space-related degree
-C) M1: The Incredible Expanding Crab Nebula
-D) A Mysterious Burst of Gravitational Waves Came...
-E) I went to ksc for Christmas and got to see wha...
-F) It looks like the NASA guys had to resche...
+A) A star shining through Saturn's rings.
+B) Online space-related degree.
+C) M1: The Incredible Expanding Crab Nebula.
+D) Took this with a camcorder since I don't have any fancy telescopes or nothin.
+E) I went to ksc for Christmas and got to see what made me interested about spaceflight.
+F) I went to the John F. Kennedy Space Center.
 ```
 The A,C,E,and F senteces are from NASA community and B and D are from Space community.
 
