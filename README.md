@@ -15,7 +15,7 @@ It has 1.3m Members with 282 IN SPACE and it was created on Jul 17, 2008.
 The [Space Discussion](https://www.reddit.com/r/space/) is a community for sharing & discussing informative content on: * Astrophysics * Cosmology * Space Exploration * Planetary Science * Astrobiology. It has 17.2m
 Members, 5.0k Online, and it were created Jan 26, 2008.
 The goal is to develop a binary class classification that would be able to recognize the Nasa community from Space Discussion. 
-These two close categories were selected to rise the challenge and see how close we can get using common ML algorithm libraries in python.
+These two close categories were selected to rise the challenge and see how close AI can get using common ML algorithm libraries in python.
 
 ### Table of Contents:
 The project directory tree structure is provided below.
