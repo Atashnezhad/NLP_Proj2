@@ -4,6 +4,19 @@
 
 # Binary Class Classification (NASA and Space) on Reddit data using NLP
 
+Check out the below sentences. It is hardly possible to differentiate between sentences from NASA and Space community? However AI does differentiate sentences easy! In this project, new feather engineered data, boost AI estimation accuracy from 75% to 96%. AI amazingly does such complicate tasks.
+
+```
+A) A star shining through Saturn's rings.
+B) Online space-related degree.
+C) M1: The Incredible Expanding Crab Nebula.
+D) Took this with a camcorder since I don't have any fancy telescopes or nothin.
+E) I went to ksc for Christmas and got to see what made me interested about spaceflight.
+F) I went to the John F. Kennedy Space Center.
+```
+The A,C,E,and F senteces are from NASA community and B and D are from Space community.
+
+
 ### Project Name:
 Binary Class Classification (NASA and Space) on Reddit data using NLP
 
@@ -17,16 +30,7 @@ Members, 5.0k Online, and it were created Jan 26, 2008.
 The goal is to develop a binary class classification that would be able to recognize the Nasa community from Space Discussion. 
 These two close categories were selected to rise the challenge and see how close AI can get using common ML algorithm libraries in python.
 
-Check out below sentences. Can you difference between sentences from NASA and Space community? Actually AI does! with 96% accuracy.
-```
-A) A star shining through Saturn's rings.
-B) Online space-related degree.
-C) M1: The Incredible Expanding Crab Nebula.
-D) Took this with a camcorder since I don't have any fancy telescopes or nothin.
-E) I went to ksc for Christmas and got to see what made me interested about spaceflight.
-F) I went to the John F. Kennedy Space Center.
-```
-The A,C,E,and F senteces are from NASA community and B and D are from Space community.
+
 
 
 ### Table of Contents:
