@@ -17,11 +17,11 @@ F) I went to the John F. Kennedy Space Center.
 The A,C,E,and F senteces are from NASA community and B and D are from Space community.
 
 
-### Project Name:
+### Project Name
 Binary Class Classification (NASA and Space) on Reddit data using NLP
 
 
-### Description:
+### Description
 Space was always my passion and I love observing stars, galaxies, solar systems with binocular.
 The [NASA](https://www.reddit.com/r/nasa/) community is for anything related to the National Aeronautics and Space Administration; the latest news, events, current and future missions, and more.
 It has 1.3m Members with 282 IN SPACE and it was created on Jul 17, 2008.
@@ -33,7 +33,7 @@ These two close categories were selected to rise the challenge and see how close
 
 
 
-### Table of Contents:
+### Table of Contents
 The project directory tree structure is provided below.
 ```
 ├── Assets
@@ -53,7 +53,7 @@ The project directory tree structure is provided below.
 └── README.md
 ```
 
-### Installation:
+### Installation
 
 * To run this project you need to have python installed on your local machine. At the moment the project does not come with the env but I will make an env using conda and will add it to the directory. check for updates.  Also, I may provide a docker image for this project too. So stay tuned!
 I also prepare a medium about how you can use docker image and Jupyter notebook [here](https://medium.com/@atashnezhad1/in-this-tutorial-we-will-learn-the-very-basics-of-running-the-jupyter-notebook-using-docker-9b347c9058d9).
@@ -69,17 +69,17 @@ Then use following to install favorite libraries (i.e. wordcloud).
 !/Users/amin/anaconda3/bin/python -m pip install wordcloud
 ```
 I used it several times in Part_03 of this project and it works like charm!
-### Instruction:
+### Instruction
 
-**Gathering data:** 
+**Gathering data** 
 
 Data was received using the API from the Reddit website for two categories. I used my friend [Saied](https://github.com/saiedmighani/Global_warming_NLP_analysis/blob/master/assets/get_reddit_posts.py) function with a little bit of change to receive data from Reddit. You may check out the original function [here](https://github.com/scaress21/reddit_and_quibi/blob/master/code/01A_Gathering_Reddit_Data.ipynb).
 the data was save in two formats .csv and .pkl.
 
-**Cleaning data:** 
+**Cleaning data** 
 Data included 10-15 columns with one column with Reddit comments as text. The NaN values were filtered and the text was cleaned using a series of functions including tokenization, splitting, snitching, removing stop words, stemming, etc.
 
-**Exploratory Data Analysis:** 
+**Exploratory Data Analysis** 
 
 Analyzing the data, It was observed that both categories are pretty close. Space has a higher percentage of 'link', 'rich:video', and 'self' while Nasa has more 'image' numbers.
 NASA has a lower average word count compare to Space with a smaller standard deviation. Both subcategories are pretty close in terms of word count. However, the space category has some long texts above 500. For the sentiment score, it is observed that both mean and std are pretty close. It seems both SPACE and NASA forums are pretty close.  It is seen that the negative sentiment scores for space are a little bit higher than NASA. People who are in NASA discussion have a more positive attitude compared to people who are in space discussion.
@@ -139,7 +139,7 @@ Again it was observed that both categories are match in term of complexity.
 Three set of data frames were prepared including count-vectorized texts, EDA data frame and, merged count-vectorized text and EDA data.
 
 
-**Modeling-ML algorithms:** 
+**Modeling-ML algorithms** 
 
 - Logistic Regression, Gradient Boosting Classifier and, MLP Classifier were applied. Algorithms were grid-searched to find the best hyper-parameters and improve the accuracy.
 - The voting system included three best models along with hyper-parameters were applied which results in maximum accuracy of 96%.
