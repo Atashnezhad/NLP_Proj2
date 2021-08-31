@@ -81,45 +81,29 @@ Data included 10-15 columns with one column with Reddit comments as text. The Na
 #### Exploratory Data Analysis
 Analyzing the data, It was observed that both categories are pretty close. Space has a higher percentage of 'link', 'rich:video', and 'self' while Nasa has more 'image' numbers.
 NASA has a lower average word count compare to Space with a smaller standard deviation. Both subcategories are pretty close in terms of word count. However, the space category has some long texts above 500. For the sentiment score, it is observed that both mean and std are pretty close. It seems both SPACE and NASA forums are pretty close.  It is seen that the negative sentiment scores for space are a little bit higher than NASA. People who are in NASA discussion have a more positive attitude compared to people who are in space discussion.
-- Count vectorizing on data was done in folowing three steps:
-  - Stop words were added to a list
-  - New list of stop words was made (extend)
-  - Count vectorizing was applied 
 
-- Average word length in each sentence. Both topics are pretty close in term of average word length, sentiment score and, number fo characters.
+
+Average word length in each sentence. Both topics are pretty close in term of average word length, sentiment score and, number fo characters.
 <p align="center">
   <img src="Figures/plot_03_6.png" >
 </p>
 
-<p align="center">
-  <img src="Figures/plot_03_7.png" >
-</p>
-
-- Inspect which words other than stopwords occur frequently.
+The following figure shows which words are used frequently in NASA and Space forums.
 <p>
   <img src="Figures/plot_03_11.png" >
 </p>
 
-- Topic Modeling exploration with pyLDAvis.
-  - The unsupervised correctly detect two main subjects as we expected (high Coffs for NASA and Space). NASA and Space!
-- Textblob libraries. sentiment polarity was applied.
-- Vader Sentiment Analysis was applied too. Vader works better in detecting negative sentiment.
-- Named Entity Recognition (ner). Named entity recognition is an information extraction method in which entities that are present in the text are classified into predefined entity types like “Person”,” Place”,” Organization”, etc. By using NER we can get great insights into the types of entities present in the given text dataset. A powerful correlation between enr and target values was observed.
+
+Vader Sentiment Analysis was applied and it works in detecting negative sentiment.
+#### Named Entity Recognition (ner)
+Named entity recognition is an information extraction method in which entities that are present in the text are classified into predefined entity types like “Person”,” Place”,” Organization”, etc. By using NER we can get great insights into the types of entities present in the given text dataset. A powerful correlation between enr and target values was observed.
+
 <p align="">
   <img src="Figures/plot_03_19.png" >
 </p>
 
-- Exploration through Parts of Speach Tagging in python.
-- Exploring through text complexity.
-<p align="">
-  <img src="Figures/plot_03_24.png" >
-</p>
-Again it was observed that both categories are match in term of complexity.
-<p align="">
-  <img src="Figures/plot_03_25.png" >
-</p>
-
-- Following columns were selected and save seperatly as EDA df.
+#### New feathered data
+Following columns were selected and save seperatly as EDA data frame.
 ```
 'ent'
 'word_count*' 
@@ -129,7 +113,8 @@ Again it was observed that both categories are match in term of complexity.
 'polarity_VSA' 
 'text_complexity'
 ```
-- EDA data frame corrolation is seen at the following figure. A coorrolation between ent parameter and target is seen.
+It was observed that there is a strong correlation between parameter 'ent' and classes which are promising.
+EDA data frame corrolation is seen at the following figure. 
 <p align="">
   <img src="Figures/plot_03_26.png" >
 </p>
@@ -137,12 +122,12 @@ Again it was observed that both categories are match in term of complexity.
 Three set of data frames were prepared including count-vectorized texts, EDA data frame and, merged count-vectorized text and EDA data.
 
 
-**Modeling-ML algorithms** 
+### Modeling-ML algorithms
 
-- Logistic Regression, Gradient Boosting Classifier and, MLP Classifier were applied. Algorithms were grid-searched to find the best hyper-parameters and improve the accuracy.
-- The voting system included three best models along with hyper-parameters were applied which results in maximum accuracy of 96%.
-- It was observed that using only vectorized text results in lower accuracy compared to the EDA data set. Also using merged data set results in top accuracy. 
-- Check out the following confusion matrixes. The left one is using Logistic Regression on vectorized data while at the right the Soft voting model used on All_df.
+Logistic Regression, Gradient Boosting Classifier and, MLP Classifier were applied. Algorithms were grid-searched to find the best hyper-parameters and improve the accuracy.
+The voting system included three best models along with hyper-parameters were applied which results in maximum accuracy of 96%.
+It was observed that using only vectorized text results in lower accuracy compared to the EDA data set. Also using merged data set results in top accuracy. 
+Check out the following confusion matrixes. The left one is using Logistic Regression on vectorized data while at the right the Soft voting model used on All_df.
 <p align="left">
   <img width="400" src="Figures/plot_04_1.png" >
   <img width="400" src="Figures/plot_04_03_2.png" >
@@ -156,12 +141,12 @@ Three set of data frames were prepared including count-vectorized texts, EDA dat
 
   
 
-**Conclusion**
+### Conclusion
 
-- The best model is the soft voting model including the three best ML algorithms which were achieved through grid search.
-- In this project, a new set of data were extracted which later used for modeling. The analysis shows that a new engineered set of data (EDA) shows higher accuracy and boosts the ML algorithms.
-- Merging both vectorized text and Engineered data set (EDA) even helps more and boosts the accuracy above 80%.
-- Finally having an ensemble model works the best with an accuracy of 96%.
+The best model is the soft voting model including the three best ML algorithms which were achieved through grid search.
+In this project, a new set of data were extracted which later used for modeling. The analysis shows that a new engineered set of data (EDA) shows higher accuracy and boosts the ML algorithms.
+Merging both vectorized text and Engineered data set (EDA) even helps more and boosts the accuracy above 80%.
+Finally having an ensemble model works the best with an accuracy of 96%.
 ```
 |    | model_name                         | data_set_used     |   accuracys |   TN |   FP |   FN |   TP |
 |----|------------------------------------|-------------------|-------------|------|------|------|------|
@@ -207,9 +192,9 @@ Three models including, xgboost (using normalized EDA data frame) and ANN (tuned
 
 
 
-**Suggestions**
+### Suggestions
 
-- TFIDF vectorizer can be studied and see if it helps the accuracy of models.
-- In voting ML algorithm more model can be introduced which it would help for sure.
+TFIDF vectorizer can be studied and see if it helps the accuracy of models.
+In voting ML algorithm more model can be introduced which it would help for sure.
 
 
