@@ -83,21 +83,17 @@ Data included 10-15 columns with one column with Reddit comments as text. The Na
 
 The main data frame was analyzed and the following were observed.
 
-- It is seen that both categories are pretty close. Space has a higher percentage of 'link', 'rich:video', and 'self' while Nasa has more 'image' numbers.
-- Again It is seen that both categories are pretty close in terms of 'over_18'. a higher number of people in space answered 'False' to the column 'over_18'.
-NASA has a lower average word count compare to Space with a smaller standard deviation. let's look at the plt.hist and compare it with space. A similar plot provided above but here bar plots are side by side.
+- It was observed seen that both categories are pretty close. Space has a higher percentage of 'link', 'rich:video', and 'self' while Nasa has more 'image' numbers.
+- NASA has a lower average word count compare to Space with a smaller standard deviation. let's look at the plt.hist and compare it with space. A similar plot provided above but here bar plots are side by side.
 - Both subcategories are pretty close in terms of word count. However, the space category has some long texts above 500.
-- For the sentiment score, it is seen that both mean and std are pretty close. It seems both SPACE and NASA forums are pretty close! Let's plot both NASA and space.
-- It is seen that the negative sentiment scores for space are a little bit higher than NASA. People who are in NASA discussion have a more positive attitude compared to people who are in space discussion. Let's double-check it and do the summation of sentiments for both space and NASA. Also, the Space has more words compare to NASA.
-- Let's focus on text and do count vectorize on data. Three steps are taken as follows:
-  - Add some stop words to the general list
-  - Apply the new list of stop words list (extend)
-  - Apply count vectorize to the data
+- For the sentiment score, it is observed that both mean and std are pretty close. It seems both SPACE and NASA forums are pretty close. 
+- It is seen that the negative sentiment scores for space are a little bit higher than NASA. People who are in NASA discussion have a more positive attitude compared to people who are in space discussion.
+- Count vectorizing on data was done in folowing three steps:
+  - Stop words were added to a list
+  - New list of stop words was made (extend)
+  - Count vectorizing was applied 
 
-- Let's see the top words in NASA, SPACE, and then see the top overlap words.
-  - As it is seen these two topics are very close! The top words for NASA are space, earth, NASA, moon which have three out of four similar to space.
-- Check out the Number of characters present in each sentence.
-- Average word length in each sentence. Again both topics are pretty close in term of average word length, sentiment score and, number fo characters.
+- Average word length in each sentence. Both topics are pretty close in term of average word length, sentiment score and, number fo characters.
 <p align="center">
   <img src="Figures/plot_03_6.png" >
 </p>
@@ -140,19 +136,17 @@ Again it was observed that both categories are match in term of complexity.
 'polarity_VSA' 
 'text_complexity'
 ```
-- EDA df corrolation is see at the following figure. Again it is observed that there is clear coorrolation between ent parameter and target.
+- EDA data frame corrolation is seen at the following figure. A coorrolation between ent parameter and target is seen.
 <p align="">
   <img src="Figures/plot_03_26.png" >
 </p>
 
-- Three set of data frames were prepared including count-vectorized texts, EDA data frame and, merged count-vectorized text and EDA data.
+Three set of data frames were prepared including count-vectorized texts, EDA data frame and, merged count-vectorized text and EDA data.
 
 
 **Modeling-ML algorithms:** 
 
-- Several ML algorithms applied to three sets of the data frames. 
-- Logistic Regression, Gradient Boosting Classifier and, MLP Classifier were applied.
-- Models were grid searched using parallel computing to achieve the highest speed.
+- Logistic Regression, Gradient Boosting Classifier and, MLP Classifier were applied. Algorithms were grid-searched to find the best hyper-parameters and improve the accuracy.
 - The voting system included three best models along with hyper-parameters were applied which results in maximum accuracy of 96%.
 - It was observed that using only vectorized text results in lower accuracy compared to the EDA data set. Also using merged data set results in top accuracy. 
 - Check out the following confusion matrixes. The left one is using Logistic Regression on vectorized data while at the right the Soft voting model used on All_df.
