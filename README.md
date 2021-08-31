@@ -102,7 +102,7 @@ Named entity recognition is an information extraction method in which entities t
   <img src="Figures/plot_03_19.png" >
 </p>
 
-#### New feathered data
+#### New Featured  Data
 Following columns were selected and save seperatly as EDA data frame.
 ```
 'ent'
