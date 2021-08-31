@@ -78,13 +78,6 @@ Data included 10-15 columns with one column with Reddit comments as text. The Na
 Analyzing the data, It was observed that both categories are pretty close. Space has a higher percentage of 'link', 'rich:video', and 'self' while Nasa has more 'image' numbers.
 NASA has a lower average word count compare to Space with a smaller standard deviation. Both subcategories are pretty close in terms of word count. However, the space category has some long texts above 500. For the sentiment score, it is observed that both mean and std are pretty close. It seems both SPACE and NASA forums are pretty close.  It is seen that the negative sentiment scores for space are a little bit higher than NASA. People who are in NASA discussion have a more positive attitude compared to people who are in space discussion.
 
-
-Average word length in each sentence. Both topics are pretty close in term of average word length, sentiment score and, number fo characters.
-<p align="center">
-  <img src="Figures/plot_03_6.png" >
-</p>
-
-
 #### Named Entity Recognition (ner)
 Named entity recognition is an information extraction method in which entities that are present in the text are classified into predefined entity types like “Person”,” Place”,” Organization”, etc. By using NER we can get great insights into the types of entities present in the given text dataset. A powerful correlation between enr and target values was observed.
 
