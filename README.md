@@ -88,13 +88,7 @@ Average word length in each sentence. Both topics are pretty close in term of av
   <img src="Figures/plot_03_6.png" >
 </p>
 
-The following figure shows which words are used frequently in NASA and Space forums.
-<p>
-  <img src="Figures/plot_03_11.png" >
-</p>
 
-
-Vader Sentiment Analysis was applied and it works in detecting negative sentiment.
 #### Named Entity Recognition (ner)
 Named entity recognition is an information extraction method in which entities that are present in the text are classified into predefined entity types like “Person”,” Place”,” Organization”, etc. By using NER we can get great insights into the types of entities present in the given text dataset. A powerful correlation between enr and target values was observed.
 
