@@ -1,6 +1,6 @@
 # Binary Class Classification (NASA and Space) on Reddit data using NLP
 
-Check out the below sentences. It is hardly possible to differentiate between sentences from NASA and Space community. However AI does differentiate sentences easy! In this project, new feather engineered data, boost AI estimation accuracy from 75% to 96%. AI amazingly does such complicate tasks.
+Check out the below sentences. It is hardly possible to differentiate between sentences from NASA and Space community. However AI does differentiate sentences easy! In this project, new feature engineered data, boost AI estimation accuracy from 75% to 96%. AI amazingly does such complicate tasks.
 
 ```
 A) A star shining through Saturn's rings.
